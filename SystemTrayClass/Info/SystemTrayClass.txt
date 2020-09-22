@@ -1,0 +1,46 @@
+Events:
+- BalloonClick()
+- BalloonClose()
+- BalloonHide()
+- BalloonShow()
+- BalloonTimeOut()
+- Click(Button As Integer)
+- DblClick(Button As Integer)
+- MouseDown(Button As Integer)
+- MouseMove()
+- MouseUp(Button As Integer)
+- ReceivedData(Data As String)
+
+Properties:
+- Enabled (Value)
+  True or False
+- Icon (Value)
+  Handle of the Icon that will be show on the system tray
+- Menu (Value)
+  The menu or parent hWnd
+- Parent (Value)
+  The parent hWnd
+- TipText (Text)
+  Tooltiptext to show in the system tray icon
+
+Function:
+- hWnd
+  Returns the system tray window handle
+- Visible
+  Returns True or False
+
+Subs:
+- ShowBalloon (Title, Info, BalloonIcon, TimeOut, Sound)
+  Title       - is balloon title text
+  Info        - is balloon information text
+  BalloonIcon - icon wich will be displayed in the balloon
+  TimeOut     - time to show the balloon (in miliseconds)
+  Sound       - False or True gives a bleep when showing the balloon
+- AddIcon
+  Adds the icon on the system tray
+- DeleteIcon
+  Delete the icon from the system tray
+- HideBalloon
+  Hides the system tray icon balloon
+- RecreateIcon
+  Recreate the system tray icon
